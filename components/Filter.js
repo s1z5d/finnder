@@ -16,61 +16,7 @@ export function filterController() {
     return customised; 
 }
 
-export function getRandomColor() {
-	var color = [];
-  var defaultColors = ["#f44336", "#e91e63", "#9c27b0",
-	                     "#673ab7", "#3f51b5", "#2196f3",
-	                     "#03a9f4", "#00bcd4", "#009688",
-	                     "#4caf50", "#8bc34a", "#cddc39",
-	                     "#ffeb3b", "#ffc107", "#ff9800",
-	                     "#ff5722", "#795548", "#607d8b"] 
-	var ran1 = Math.floor(Math.random() * 17)
-  var ran2 = Math.floor(Math.random() * 17);
-  var ran3 = Math.floor(Math.random() * 17);
-  var ran4 = Math.floor(Math.random() * 17);
-  var ran5 = Math.floor(Math.random() * 17);
-  var ran6 = Math.floor(Math.random() * 17);
-  var ran7 = Math.floor(Math.random() * 17);
-  var ran8 = Math.floor(Math.random() * 17);
-  var ran9 = Math.floor(Math.random() * 17);
-  while (ran2 == ran1) {
-    ran2 = Math.floor(Math.random() * 17)
-  }
-  while (ran3 == ran2 || ran3 == ran1) {
-    ran3 = Math.floor(Math.random() * 17)
-  }
-  while (ran3 == ran2 || ran3 == ran1) {
-    ran3 = Math.floor(Math.random() * 17)
-  }
-  while (ran4 == ran3 || ran4 == ran2 || ran4 == ran1) {
-    ran4 = Math.floor(Math.random() * 17)
-  }
-  while (ran5 == ran4 || ran5 == ran3 || ran5 == ran2 || ran5 == ran1) {
-    ran5 = Math.floor(Math.random() * 17)
-  }
-  while (ran6 == ran5 || ran6 == ran4 || ran6 == ran3 || ran6 == ran2 || ran6 == ran1) {
-    ran6 = Math.floor(Math.random() * 17)
-  }
-  while (ran7 == ran6 || ran7 == ran5 || ran7 == ran4 || ran7 == ran3 || ran7 == ran2 || ran7 == ran1) {
-    ran7 = Math.floor(Math.random() * 17)
-  }
-  while (ran8 == ran7 || ran8 == ran6 || ran8 == ran5 || ran8 == ran4 || ran8 == ran3 || ran8 == ran2 || ran8 == ran1) {
-    ran8 = Math.floor(Math.random() * 17)
-  }
-  while (ran9 == ran8 || ran9 == ran7 || ran9 == ran6 || ran9 == ran5 || ran9 == ran4 || ran9 == ran3 || ran9 == ran2 || ran9 == ran1) {
-    ran9 = Math.floor(Math.random() * 17)
-  }
-  color[0] = defaultColors[ran1];
-  color[1] = defaultColors[ran2];
-  color[2] = defaultColors[ran3];
-  color[3] = defaultColors[ran4];
-  color[4] = defaultColors[ran5];
-  color[5] = defaultColors[ran6];
-  color[6] = defaultColors[ran7];
-  color[7] = defaultColors[ran8];
-  color[8] = defaultColors[ran9];
-	return color;
-}
+
 
 
 export function readAndFilterDump() {
@@ -580,4 +526,61 @@ export function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
 
 export function deg2rad(deg) {
   return deg * (Math.PI/180)
+}
+
+//if you find a better way, let me know
+export function getRandomColor() {
+	var color = [];
+  var defaultColors = ["#f44336", "#e91e63", "#9c27b0",
+	                     "#673ab7", "#3f51b5", "#2196f3",
+	                     "#03a9f4", "#00bcd4", "#009688",
+	                     "#4caf50", "#8bc34a", "#cddc39",
+	                     "#ffeb3b", "#ffc107", "#ff9800",
+	                     "#ff5722", "#795548", "#607d8b"] 
+	var ran1 = Math.floor(Math.random() * 17)
+  var ran2 = Math.floor(Math.random() * 17);
+  var ran3 = Math.floor(Math.random() * 17);
+  var ran4 = Math.floor(Math.random() * 17);
+  var ran5 = Math.floor(Math.random() * 17);
+  var ran6 = Math.floor(Math.random() * 17);
+  var ran7 = Math.floor(Math.random() * 17);
+  var ran8 = Math.floor(Math.random() * 17);
+  var ran9 = Math.floor(Math.random() * 17);
+  while (ran2 == ran1) {
+    ran2 = Math.floor(Math.random() * 17)
+  }
+  while (ran3 == ran2 || ran3 == ran1) {
+    ran3 = Math.floor(Math.random() * 17)
+  }
+  while (ran3 == ran2 || ran3 == ran1) {
+    ran3 = Math.floor(Math.random() * 17)
+  }
+  while (ran4 == ran3 || ran4 == ran2 || ran4 == ran1) {
+    ran4 = Math.floor(Math.random() * 17)
+  }
+  while (ran5 == ran4 || ran5 == ran3 || ran5 == ran2 || ran5 == ran1) {
+    ran5 = Math.floor(Math.random() * 17)
+  }
+  while (ran6 == ran5 || ran6 == ran4 || ran6 == ran3 || ran6 == ran2 || ran6 == ran1) {
+    ran6 = Math.floor(Math.random() * 17)
+  }
+  while (ran7 == ran6 || ran7 == ran5 || ran7 == ran4 || ran7 == ran3 || ran7 == ran2 || ran7 == ran1) {
+    ran7 = Math.floor(Math.random() * 17)
+  }
+  while (ran8 == ran7 || ran8 == ran6 || ran8 == ran5 || ran8 == ran4 || ran8 == ran3 || ran8 == ran2 || ran8 == ran1) {
+    ran8 = Math.floor(Math.random() * 17)
+  }
+  while (ran9 == ran8 || ran9 == ran7 || ran9 == ran6 || ran9 == ran5 || ran9 == ran4 || ran9 == ran3 || ran9 == ran2 || ran9 == ran1) {
+    ran9 = Math.floor(Math.random() * 17)
+  }
+  color[0] = defaultColors[ran1];
+  color[1] = defaultColors[ran2];
+  color[2] = defaultColors[ran3];
+  color[3] = defaultColors[ran4];
+  color[4] = defaultColors[ran5];
+  color[5] = defaultColors[ran6];
+  color[6] = defaultColors[ran7];
+  color[7] = defaultColors[ran8];
+  color[8] = defaultColors[ran9];
+	return color;
 }
